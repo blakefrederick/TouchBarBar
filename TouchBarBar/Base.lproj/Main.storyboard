@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -600,7 +600,7 @@
                                         <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
-                                                <action selector="toggleSourceList:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
+                                                <action selector="toggleSidebar:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -664,11 +664,14 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="TouchBarBar" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="Moz-pa-1vB"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -683,29 +686,24 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="366" height="298"/>
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="298"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HjI-FA-7eG">
-                                <rect key="frame" x="0.0" y="0.0" width="366" height="28"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Check out your Touch Bar Bar!" drawsBackground="YES" id="fj9-OC-Vim">
+                                <rect key="frame" x="0.0" y="0.0" width="368" height="27"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Super Mario 64 Touch Bar Soundbar" drawsBackground="YES" id="fj9-OC-Vim">
                                     <font key="font" metaFont="system" size="23"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="backgroundColor" red="0.89006632566452026" green="0.16228696703910828" blue="0.1572626531124115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
                             </textField>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mHh-c9-iRB">
-                                <rect key="frame" x="-57" y="28" width="480" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="480" id="BHY-bv-9Eg"/>
-                                    <constraint firstAttribute="height" constant="270" id="a1O-y7-gDb"/>
-                                </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="top" imageScaling="proportionallyDown" image="isaac" id="lV9-UY-wLP"/>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIT-Ai-MJV">
+                                <rect key="frame" x="-24" y="27" width="498" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="mariopointing" id="vI0-E3-4Uy"/>
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="mHh-c9-iRB" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="BzA-Ne-1k5"/>
-                            <constraint firstItem="mHh-c9-iRB" firstAttribute="centerX" secondItem="HjI-FA-7eG" secondAttribute="centerX" id="ZBY-dp-wNa"/>
                             <constraint firstItem="HjI-FA-7eG" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="fLl-Fg-JYI"/>
                             <constraint firstAttribute="bottom" secondItem="HjI-FA-7eG" secondAttribute="bottom" id="l4u-x3-YIi"/>
                             <constraint firstAttribute="trailing" secondItem="HjI-FA-7eG" secondAttribute="trailing" id="xgl-r3-Au5"/>
@@ -718,6 +716,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="isaac" width="497" height="359"/>
+        <image name="mariopointing" width="1680" height="945"/>
     </resources>
 </document>

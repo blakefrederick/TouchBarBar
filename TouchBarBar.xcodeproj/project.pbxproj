@@ -11,6 +11,10 @@
 		1968E2851DC2E22100422BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1968E2841DC2E22100422BFE /* Assets.xcassets */; };
 		1968E2881DC2E22100422BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1968E2861DC2E22100422BFE /* Main.storyboard */; };
 		1968E29E1DC2E71000422BFE /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1968E29D1DC2E71000422BFE /* WindowController.swift */; };
+		252879592391EB50004040D0 /* chainchomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 252879552391EB50004040D0 /* chainchomp.wav */; };
+		2528795A2391EB50004040D0 /* oof.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 252879562391EB50004040D0 /* oof.mp3 */; };
+		2528795B2391EB50004040D0 /* longjumpover9000.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 252879572391EB50004040D0 /* longjumpover9000.mp3 */; };
+		2528795C2391EB50004040D0 /* longjump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 252879582391EB50004040D0 /* longjump.mp3 */; };
 		A4936DA81DED8E4800B4FE0D /* 🍺.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4936DA61DED8E4800B4FE0D /* 🍺.mp3 */; };
 		A4936DA91DED8E4800B4FE0D /* 🍾.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4936DA71DED8E4800B4FE0D /* 🍾.mp3 */; };
 		A4936DAC1DED8F5100B4FE0D /* 🍸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4936DAA1DED8F5100B4FE0D /* 🍸.mp3 */; };
@@ -29,12 +33,16 @@
 
 /* Begin PBXFileReference section */
 		1968E27D1DC2E22100422BFE /* TouchBarBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchBarBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1968E2801DC2E22100422BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1968E2801DC2E22100422BFE /* AppDelegate.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1968E2841DC2E22100422BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1968E2871DC2E22100422BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1968E2891DC2E22100422BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1968E28E1DC2E22100422BFE /* TouchBarBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchBarBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1968E29D1DC2E71000422BFE /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		252879552391EB50004040D0 /* chainchomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chainchomp.wav; sourceTree = "<group>"; };
+		252879562391EB50004040D0 /* oof.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oof.mp3; sourceTree = "<group>"; };
+		252879572391EB50004040D0 /* longjumpover9000.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = longjumpover9000.mp3; sourceTree = "<group>"; };
+		252879582391EB50004040D0 /* longjump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = longjump.mp3; sourceTree = "<group>"; };
 		A4936DA61DED8E4800B4FE0D /* 🍺.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "🍺.mp3"; sourceTree = "<group>"; };
 		A4936DA71DED8E4800B4FE0D /* 🍾.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "🍾.mp3"; sourceTree = "<group>"; };
 		A4936DAA1DED8F5100B4FE0D /* 🍸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "🍸.mp3"; sourceTree = "<group>"; };
@@ -92,6 +100,10 @@
 		A4936DAE1DED8F5900B4FE0D /* Bar */ = {
 			isa = PBXGroup;
 			children = (
+				252879552391EB50004040D0 /* chainchomp.wav */,
+				252879582391EB50004040D0 /* longjump.mp3 */,
+				252879572391EB50004040D0 /* longjumpover9000.mp3 */,
+				252879562391EB50004040D0 /* oof.mp3 */,
 				A4936DAA1DED8F5100B4FE0D /* 🍸.mp3 */,
 				A4936DAB1DED8F5100B4FE0D /* 🍹.mp3 */,
 				A4936DA61DED8E4800B4FE0D /* 🍺.mp3 */,
@@ -150,7 +162,7 @@
 				TargetAttributes = {
 					1968E27C1DC2E22100422BFE = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 3D97229N6B;
+						DevelopmentTeam = JA9NLM78L6;
 						ProvisioningStyle = Automatic;
 					};
 					1968E28D1DC2E22100422BFE = {
@@ -165,6 +177,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -185,10 +198,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4936DAC1DED8F5100B4FE0D /* 🍸.mp3 in Resources */,
+				2528795A2391EB50004040D0 /* oof.mp3 in Resources */,
 				A4936DAD1DED8F5100B4FE0D /* 🍹.mp3 in Resources */,
+				2528795B2391EB50004040D0 /* longjumpover9000.mp3 in Resources */,
 				A4936DA81DED8E4800B4FE0D /* 🍺.mp3 in Resources */,
+				252879592391EB50004040D0 /* chainchomp.wav in Resources */,
 				A4936DA91DED8E4800B4FE0D /* 🍾.mp3 in Resources */,
 				1968E2851DC2E22100422BFE /* Assets.xcassets in Resources */,
+				2528795C2391EB50004040D0 /* longjump.mp3 in Resources */,
 				1968E2881DC2E22100422BFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +304,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -328,36 +346,35 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		1968E2981DC2E22100422BFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3D97229N6B;
+				DEVELOPMENT_TEAM = JA9NLM78L6;
 				INFOPLIST_FILE = "$(SRCROOT)/TouchBarBar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.guidouil.touchbarbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blakefrederick.touchbarbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		1968E2991DC2E22100422BFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3D97229N6B;
+				DEVELOPMENT_TEAM = JA9NLM78L6;
 				INFOPLIST_FILE = "$(SRCROOT)/TouchBarBar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.guidouil.touchbarbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blakefrederick.touchbarbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
